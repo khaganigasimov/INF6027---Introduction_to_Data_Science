@@ -1,4 +1,4 @@
-## Stock Price Prediction - INF6027
+# Stock Price Prediction - INF6027
 
 # Overview
 
