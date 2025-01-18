@@ -69,4 +69,3 @@ ggplot2, infotheo, dplyr, caret, and Information.
 **Clone the repository:**
 
 git clone https://github.com/your-username/Stock_Price_Prediction_INF6027.git
-cd Stock_Price_Prediction_INF6027
