@@ -62,11 +62,11 @@ ggplot2, infotheo, dplyr, caret, and Information.
 
 # How to Run
 
-Install the latest version of R and RStudio:
-Download R from the CRAN website.
-Download and install RStudio from the RStudio website.
+**Install the latest version of R and RStudio:**
+   - Download R from the [CRAN website](https://cran.r-project.org/)
+   - Download and install RStudio from the [RStudio website](https://posit.co/download/rstudio-desktop/)
 
-Clone the repository:
+**Clone the repository:**
 
 git clone https://github.com/your-username/Stock_Price_Prediction_INF6027.git
 cd Stock_Price_Prediction_INF6027
