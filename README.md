@@ -12,6 +12,12 @@ notebooks/: R Notebooks for data analysis and modeling.
 
 README.md: Project overview and instructions.
 
+# Research Questions
+
+1. Key Financial Indicators: What financial indicators significantly influence stock price variation (PRICE_VAR) and stock classification (Buy/Not Buy, Class variable)?
+2. Classification vs. Regression: Given the dual nature of the problem, which approach—classification or regression—provides a more nuanced understanding of stock performance?
+3. Impact of Dimensionality Reduction: How does using Principal Component Analysis (PCA) affect the predictive accuracy and interpretability of models in stock price forecasting?
+4. Performance Comparison: How do linear models (Linear Regression, Logistic Regression) compare with non-linear models (e.g., ANN, XGBoost) for forecasting stock price variation and classification?
 
 # Methodology
 
@@ -47,6 +53,28 @@ Classification Accuracy: 63.45%
 
 Regression R-squared: ~20%
 
+# Key Findings
+
+# Stock Classification
+
+Classification provided a more actionable framework for investors, offering a clear Buy/Not Buy decision.
+Information Value was used for feature selection, reducing 200+ features to 138, and further refined through multicollinearity filtering, resulting in 103 final predictors.
+Logistic regression achieved 63.45% accuracy, despite the dataset's high dimensionality and complexity.
+
+# Stock Price Regression
+
+Two regression strategies were tested:
+PCA-based Regression: PCA reduced dimensionality while retaining 92.5% of variance, though it lacked interpretability.
+Mutual Information & Multicollinearity Filtering: Retained interpretability while reducing feature redundancy.
+Regression models had limited predictive power (R² ~ 20%), highlighting the difficulty in predicting stock prices using only financial ratios.
+
+# Comparative Insights
+
+Classification is more interpretable and actionable than regression, making it more suitable for investment strategy development.
+Dimensionality reduction techniques improve computational efficiency but must be balanced against interpretability.
+Stock price forecasting remains inherently complex, suggesting the need for non-linear and deep learning models for future improvements.
+
+
 # Feature Importance Analysis:
 
 Top financial indicators affecting stock price variation.
@@ -69,3 +97,7 @@ ggplot2, infotheo, dplyr, caret, and Information.
 **Clone the repository:**
 
 git clone https://github.com/your-username/Stock_Price_Prediction_INF6027.git
+
+**Specific points about code**
+
+Inside the Code folder, there are two R files containing the code for Classification and Regression respectively. Data preprocessing parts are the same, differences begin with Feature engineering part. Code can be executed at once or sequentially to see all the details.
